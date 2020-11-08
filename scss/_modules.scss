@@ -1,0 +1,76 @@
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+header {
+  margin-top: 5.3125rem;
+  text-align: center;
+
+  p {
+    margin-top: 1rem;
+    line-height: (25/15);
+    letter-spacing: 0.1px;
+  }
+}
+
+h1 {
+  letter-spacing: 0.17px;
+  span {
+    text-align: left;
+    font-weight: 200;
+  }
+}
+
+.card {
+  // max-width: 350px;
+  flex: 0 1 350px;
+  display: flex;
+  flex-direction: column;
+  // margin: auto;
+  // margin-bottom: 1.875rem;
+  padding: 2rem;
+  background-color: white;
+
+  border-radius: 0.5rem;
+
+  transition: transform 1.5s 0.5s;
+
+  &__description {
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    letter-spacing: 0.09px;
+    line-height: (23/13);
+  }
+
+  &__icon {
+    margin-top: 2.5rem;
+    align-self: flex-end;
+  }
+
+  &--supervisor {
+    border-top: 0.25rem solid $Cyan;
+
+    @media (min-width: 1339px) {
+      transform: translateY(50%);
+    }
+  }
+
+  &--team-builder {
+    border-top: 0.25rem solid $Red;
+  }
+
+  &--karma {
+    border-top: 0.25rem solid $Orange;
+    @media (min-width: 1339px) {
+      order: 1;
+    }
+  }
+
+  &--calculator {
+    border-top: 0.25rem solid $Blue;
+    @media (min-width: 1339px) {
+      transform: translateY(50%);
+    }
+  }
+}
