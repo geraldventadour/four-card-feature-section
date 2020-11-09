@@ -8,17 +8,16 @@ header {
   margin: auto;
 }
 
-@supports not (row-gap: 1.875rem) {
-  .card {
-    margin-bottom: 1.875rem;
+@supports (gap: 1.875rem) {
+  // .card {
+  //   margin-bottom: 1.875rem;
+  // }
+  .cards {
+    gap: 1.875rem;
   }
-}
 
-@supports not (column-gap: 1.875rem) {
-  @media (min-width: 845px) {
-    .card {
-      margin: auto 0.9375rem;
-    }
+  .card {
+    margin-bottom: 0;
   }
 }
 
@@ -30,7 +29,6 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 1.875rem;
-  column-gap: 1.875rem;
+
   // margin: 4.75rem auto;
 }
