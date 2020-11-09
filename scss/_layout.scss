@@ -8,19 +8,6 @@ header {
   margin: auto;
 }
 
-@supports (gap: 1.875rem) {
-  // .card {
-  //   margin-bottom: 1.875rem;
-  // }
-  .cards {
-    gap: 1.875rem;
-  }
-
-  .card {
-    margin-bottom: 0;
-  }
-}
-
 .cards {
   width: min(82.9333333%, 1110px);
   margin: 4rem auto;

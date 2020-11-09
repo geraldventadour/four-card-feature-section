@@ -78,3 +78,16 @@ h1 {
     }
   }
 }
+
+@supports (gap: 1.875rem) {
+  // .card {
+  //   margin-bottom: 1.875rem;
+  // }
+  .cards {
+    gap: 1.875rem;
+  }
+
+  .card {
+    margin: 0;
+  }
+}

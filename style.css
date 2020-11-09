@@ -80,15 +80,6 @@ header {
   margin: auto;
 }
 
-@supports (gap: 1.875rem) {
-  .cards {
-    gap: 1.875rem;
-  }
-
-  .card {
-    margin-bottom: 0;
-  }
-}
 .cards {
   width: min(82.9333333%, 1110px);
   margin: 4rem auto;
@@ -165,6 +156,16 @@ h1 span {
 @media (min-width: 1339px) {
   .card--calculator {
     transform: translateY(50%);
+  }
+}
+
+@supports (gap: 1.875rem) {
+  .cards {
+    gap: 1.875rem;
+  }
+
+  .card {
+    margin: 0;
   }
 }
 
